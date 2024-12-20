@@ -437,6 +437,31 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form
+            class="form-subscribe"
+            autocomplete="off"
+            name="form-subscribe"
+            novalidate
+          >
+            <label>
+              <input
+                type="email"
+                name="email-user"
+                class="email-user"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="btn-subscribe">
+              Subscribe
+              <svg class="btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -449,7 +474,7 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form>
+        <form novalidate autocomplete="off">
           <div class="form-user-wrapper">
             <label for="form-user" class="form-user-label">Name</label>
             <div class="form-user-icon-wrapper">
