@@ -445,7 +445,7 @@
             name="form-subscribe"
             novalidate
           >
-            <label>
+            <label class="subscribe-label">
               <input
                 type="email"
                 name="email-user"
@@ -474,18 +474,18 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form novalidate autocomplete="off">
+        <form autocomplete="off" novalidate>
           <div class="form-user-wrapper">
-            <label for="form-user" class="form-user-label">Name</label>
+            <label for="user-name" class="form-user-label">Name</label>
             <div class="form-user-icon-wrapper">
               <input
                 type="text"
-                id="form-user"
+                id="user-name"
                 class="form-input-text"
                 name="form-user"
                 required
               />
-              <svg class="form-user-icon" width="18" height="18">
+              <svg class="form-user-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
@@ -521,12 +521,10 @@
             </div>
           </div>
           <div class="form-user-comment-wrapper">
-            <label for="form-user-comment" class="form-user-label"
-              >Comment</label
-            >
+            <label for="user-comment" class="form-user-label">Comment</label>
             <textarea
-              name="form-user-comment"
-              id="form-user-comment"
+              name="user-comment"
+              id="user-comment"
               class="form-user-comment"
               placeholder="Text input"
             ></textarea>
@@ -534,18 +532,19 @@
           <div class="cont-checkbox">
             <input
               type="checkbox"
-              id="form-user-checkbox"
-              name="checkbox"
+              id="user-privacy"
+              name="user-privacy"
               class="checkbox visually-hidden"
+              value="true"
               required
             />
-            <label for="form-user-checkbox" class="privacy"
+            <label for="user-privacy" class="privacy"
               ><span class="castom-checkbox">
                 <svg width="10" height="8">
                   <use href="./images/icons.svg#icon-chec"></use>
                 </svg> </span
               >I accept the terms and conditions of the
-              <a href="#">Privacy Policy</a></label
+              <a href="#" class="privacy-link">Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="form-btn-submit">Send</button>
